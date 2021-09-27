@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <style>
+    body {
+	width: 100%;
+	height:auto;
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	font-size: 18px;
+	text-align:center;
+	letter-spacing:1.2px;
+    background-color: #A9C3 ; }
+
+    p1 {
+      text-align: center;
+      color: white;
+      text-transform: uppercase;
+      font-size: 40px;
+      text-shadow: 2px 2px 4px black;
+      animation: bounceIn 2s infinite alternate;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    </style>
+<title>Title</title>
+
+}
+</head>
+
+<body>
+
+
+<p1> distribution des colis dans les gouvernorats  </p1>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/function-plot/1.22.7/function-plot.js">
+</script>
+    <script type="text/javascript">
+        var graph1 = {{ graph1JSON | safe}} ;
+        Plotly.plot( graph1,{});
+
+</script>
+
+
+</body>
+</html>
